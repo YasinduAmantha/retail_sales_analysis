@@ -1,0 +1,2 @@
+# 🛒 Online Retail Data Analysis Using Hadoop MapReduce
+This project analyzes the Online Retail dataset containing all transactions from a UK-based, registered non-store online retail business. Using Hadoop Streaming with Python MapReduce scripts, it processes transaction data to calculate the total sales revenue for each country, providing comprehensive country-wise sales analytics.
