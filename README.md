@@ -166,7 +166,7 @@ Copy and paste the relevent configuration code at the end of the file and save i
 ## Upload Dataset to HDFS
 
 ```bash
-hadoop fs -put input/Iowa_Liquor_Sales.csv /input 
+hadoop fs -put Data/online_retail_II.csv
 ```
 
 ## Run the MapReduce Job
@@ -175,8 +175,8 @@ hadoop fs -put input/Iowa_Liquor_Sales.csv /input
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
 -mapper src/mapper.py \
 -reducer src/reducer.py \
--input /input/Iowa_Liquor_Sales.csv \
--output /output_sales_by_city
+-data /Data/online_retail_II.csv \
+-output /output_sales_by_country
 ```
 
 ### Processing the Hadoop Streaming job
@@ -189,7 +189,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
 
 # ✅ Results and Interpretation # 
 
-The MapReduce job successfully computed total sales revenue per country based on the transaction-level data from the Online Retail II dataset. The final output consisted of aggregated results where each line displays the country name followed by the total revenue generated from completed transactions.
+The MapReduce task successfully computed total sales revenue per country based on the transaction-level data from the Online Retail II dataset. The final output consisted of aggregated results where each line displays the country name followed by the total revenue generated from completed transactions.
 
 For example, here are the first few lines of the output (Country → total sales in GBP):
 
@@ -199,7 +199,7 @@ For example, here are the first few lines of the output (Country → total sales
 - **France**: £184,777.00  
 - **Australia**: £154,109.80
 
-These figures reflect that the United Kingdom, as the retailer’s home market, generated the majority of sales. Other European and global customers contributed significantly less by comparison, providing insights into regional sales distribution.
+These figures reflects that the United Kingdom, as the retailer’s home market, generated the majority of sales. Other European and global customers contributed significantly less by comparison, providing insights into regional sales distribution.
 
 ## 🔍 Interpretation
 ### Performance & Accuracy: 
