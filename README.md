@@ -13,7 +13,7 @@ This project implements a custom MapReduce job using Hadoop to analyze a large d
 
 ## 👨‍👩‍👧 Team Members
 
-- Member 1 – [Perera K R D, EG/2020/4111]  
+- Member 1 – [Perera K R D, EG/2020/4113]  
 - Member 2 – [Suraweera S A Y A, EG/2020/4225]
 - Member 3 – [Sheshan K H N, EG/2020/4330] 
 
@@ -27,7 +27,7 @@ This project implements a custom MapReduce job using Hadoop to analyze a large d
 - **Description:**  
   > This dataset contains transactional data for over half a million online retail purchases made between 2009 and 2011. The data was collected from a UK-based online retailer that primarily sells unique giftware to customers worldwide. Each transaction includes invoice details, product descriptions, quantities, pricing, customer IDs, and country information. These sales are logged systematically as part of the retailer’s e-commerce platform and made available for analysis through the UCI Machine Learning Repository. The dataset is commonly used for studies in customer segmentation, market basket analysis, and sales forecasting.
 
-![Hadoop Installation Screenshot](ScreenShots/ss1.png) 
+![Hadoop Installation Screenshot](ScreenShots/s_s1.png) 
 ---
 
 **MapReduce Task Chosen:**  
@@ -61,7 +61,7 @@ SSH (Secure Shell) installation is vital for Hadoop as it enables secure communi
 sudo apt install ssh
 ```
 
-![Hadoop Installation Screenshot](ScreenShots/ss2.png) 
+![Hadoop Installation Screenshot](ScreenShots/s_s2.png) 
 
 All the Hadoop components will run as the user that create for Apache Hadoop.
 Run the command to create user and set password :
@@ -70,7 +70,7 @@ Run the command to create user and set password :
 sudo adduser hadoop
 ```
 
-![Hadoop Installation Screenshot](ScreenShots/ss3.png)
+![Hadoop Installation Screenshot](ScreenShots/s_s3.png)
 
 Configure SSH :
 Configure password-less SSH access for the newly created hadoop user.
@@ -78,7 +78,7 @@ Configure password-less SSH access for the newly created hadoop user.
 ```bash
 ssh-keygen -t rsa
 ```
-![Hadoop Installation Screenshot](ScreenShots/ss4.png)
+![Hadoop Installation Screenshot](ScreenShots/s_s4.png)
 
 Set permissions :
 
@@ -94,7 +94,7 @@ Download hadoop
 ```bash
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
 ```
-![Hadoop Installation Screenshot](ScreenShots/ss5.png)
+![Hadoop Installation Screenshot](ScreenShots/s_s5.png)
 
 After downloaded the file, unzip it to a folder.
 
@@ -151,17 +151,17 @@ Copy and paste the relevent configuration code at the end of the file and save i
 
 ### Configuring Hadoop example
 
-![Hadoop Installation Screenshot](ScreenShots/ss6.png)
+![Hadoop Installation Screenshot](ScreenShots/s_s6.png)
 
 ### HDFS Web UI
 
-![Hadoop Installation Screenshot](ScreenShots/ss7.jpeg)
+![Hadoop Installation Screenshot](ScreenShots/s_s7.jpeg)
 
-![Hadoop Installation Screenshot](ScreenShots/ss8.jpeg)
+![Hadoop Installation Screenshot](ScreenShots/s_s8.jpeg)
 
 ### YARN Web UI
 
-![Hadoop Installation Screenshot](ScreenShots/ss9.png)
+![Hadoop Installation Screenshot](ScreenShots/s_s9.png)
 
 ## Upload Dataset to HDFS
 
@@ -181,11 +181,11 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
 
 ### Processing the Hadoop Streaming job
 
-![Hadoop Installation Screenshot](ScreenShots/ss10.jpeg)
+![Hadoop Installation Screenshot](ScreenShots/s_s10.jpeg)
 
 ### Hadoop Streaming job completed successfully. Output saved to /Liquor_sales/output_sales_by_city_new. Over 12.5 million records processed with no shuffle error (both images) 
 
-![Hadoop Installation Screenshot](ScreenShots/ss11.jpeg)
+![Hadoop Installation Screenshot](ScreenShots/s_s11.jpeg)
 
 # ✅ Results and Interpretation # 
 
