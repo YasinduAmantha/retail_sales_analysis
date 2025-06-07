@@ -13,7 +13,7 @@ This project implements a custom MapReduce job using Hadoop to analyze a large d
 
 ## 👨‍👩‍👧 Team Members
 
-- Member 1 – [Perera K R D, EG/2020/4111]  
+- Member 1 – [Perera K R D, EG/2020/4113]  
 - Member 2 – [Suraweera S A Y A, EG/2020/4225]
 - Member 3 – [Sheshan K H N, EG/2020/4330] 
 
